@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Gopala Krishna",
+    "department": "CSE",
+    "year": 2025,
+    "email": "gopala@rit.edu",
+    "phone": "9876543210",
+    "address": "Chennai",
+    "job": "Software Engineer",
+    "company": "TCS",
+    "cgpa": 9.2
+  },
+  {
+    "id": 2,
+    "name": "Ananya",
+    "department": "EEE",
+    "year": 2024,
+    "email": "ananya@rit.edu",
+    "phone": "8765432109",
+    "address": "Coimbatore",
+    "job": "Embedded Engineer",
+    "company": "Bosch",
+    "cgpa": 8.9
+  },
+  {
+    "id": 3,
+    "name": "Rahul",
+    "department": "MECH",
+    "year": 2023,
+    "email": "rahul@rit.edu",
+    "phone": "7654321098",
+    "address": "Madurai",
+    "job": "Mechanical Designer",
+    "company": "Hyundai",
+    "cgpa": 8.7
+  },
+  {
+    "id": 4,
+    "name": "Sneha",
+    "department": "IT",
+    "year": 2024,
+    "email": "sneha@rit.edu",
+    "phone": "9988776655",
+    "address": "Trichy",
+    "job": "Web Developer",
+    "company": "Zoho",
+    "cgpa": 9.1
+  },
+  {
+    "id": 5,
+    "name": "Vignesh",
+    "department": "EEE",
+    "year": 2022,
+    "email": "vignesh@rit.edu",
+    "phone": "8877665544",
+    "address": "Salem",
+    "job": "Power Systems Engineer",
+    "company": "L\u0026T",
+    "cgpa": 8.8
+  },
+  {
+    "id": 6,
+    "name": "John Doe",
+    "department": "CSE",
+    "year": 2023,
+    "email": "john@example.com",
+    "phone": "1234567890",
+    "address": "123 Street",
+    "job": "Software Engineer",
+    "company": "TechCorp",
+    "cgpa": 9.1
+  },
+  {
+    "id": 7,
+    "name": "Jane Smith",
+    "department": "ECE",
+    "year": 2024,
+    "email": "jane@example.com",
+    "phone": "9876543210",
+    "address": "456 Avenue",
+    "job": "Hardware Engineer",
+    "company": "ElectroWorks",
+    "cgpa": 8.7
+  }
+]
