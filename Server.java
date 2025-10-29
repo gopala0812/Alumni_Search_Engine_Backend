@@ -23,7 +23,7 @@ public class Server {
     }
 
     public static void main(String[] args) throws IOException {
-        int port = 8080;
+        int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         System.out.println("✅ Backend Server running on port " + port);
 
@@ -206,3 +206,4 @@ public class Server {
         return result;
     }
 }
+
