@@ -160,11 +160,24 @@ public class Server {
         return false;
     }
 
+    // ✅ FIXED CORS (for Render + local Live Server + future GitHub Pages)
     private static void handleCORS(HttpExchange exchange) {
         Headers headers = exchange.getResponseHeaders();
-        headers.set("Access-Control-Allow-Origin", "*");
+        String origin = exchange.getRequestHeaders().getFirst("Origin");
+
+        if (origin != null && (
+            origin.equals("http://127.0.0.1:5500") ||
+            origin.equals("http://localhost:5500") ||
+            origin.equals("https://gopala0812.github.io")
+        )) {
+            headers.set("Access-Control-Allow-Origin", origin);
+        } else {
+            headers.set("Access-Control-Allow-Origin", "*");
+        }
+
         headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
         headers.set("Access-Control-Allow-Headers", "Content-Type");
+        headers.set("Access-Control-Allow-Credentials", "true");
     }
 
     private static Alumni[] readDatabase() throws IOException {
@@ -188,7 +201,6 @@ public class Server {
     private static void sendJson(HttpExchange exchange, Object obj) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String response = gson.toJson(obj);
-        // ✅ FIXED: no duplicate CORS here
         exchange.sendResponseHeaders(200, response.getBytes().length);
         try (OutputStream os = exchange.getResponseBody()) {
             os.write(response.getBytes());
