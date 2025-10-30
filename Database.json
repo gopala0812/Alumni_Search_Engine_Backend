@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Gopala Krishna",
+    "name": "Gopala Krishna H K",
     "department": "CSE",
-    "year": 2025,
+    "year": 2028,
     "email": "gopala@rit.edu",
     "phone": "9876543210",
     "address": "Chennai",
     "job": "Software Engineer",
-    "company": "TCS",
+    "company": "google",
     "cgpa": 9.2
   },
   {
@@ -39,7 +39,7 @@
     "id": 4,
     "name": "Sneha",
     "department": "IT",
-    "year": 2024,
+    "year": 2025,
     "email": "sneha@rit.edu",
     "phone": "9988776655",
     "address": "Trichy",
@@ -56,31 +56,7 @@
     "phone": "8877665544",
     "address": "Salem",
     "job": "Power Systems Engineer",
-    "company": "L\u0026T",
+    "company": "L&T",
     "cgpa": 8.8
-  },
-  {
-    "id": 6,
-    "name": "John Doe",
-    "department": "CSE",
-    "year": 2023,
-    "email": "john@example.com",
-    "phone": "1234567890",
-    "address": "123 Street",
-    "job": "Software Engineer",
-    "company": "TechCorp",
-    "cgpa": 9.1
-  },
-  {
-    "id": 7,
-    "name": "Jane Smith",
-    "department": "ECE",
-    "year": 2024,
-    "email": "jane@example.com",
-    "phone": "9876543210",
-    "address": "456 Avenue",
-    "job": "Hardware Engineer",
-    "company": "ElectroWorks",
-    "cgpa": 8.7
   }
 ]
